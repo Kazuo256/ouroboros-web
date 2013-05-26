@@ -27,46 +27,61 @@
 
     <h2>Tema da Monografia</h2>
     <p>Sistema de software que integra C++ com linguagens de script.</p>
-    <br/>
 
     <h2>Resumo</h2>
-    <p> É comum, principalmente no desenvolvimento de jogos eletrônicos, a necessidade de um jeito
-        fácil ou prático de inserir conteúdo lógico dinamicamente na aplicação. Linguagens de script
+    <p> É comum, principalmente no desenvolvimento de jogos eletrônicos, a necessidade de um método
+        prático de se inserir conteúdo lógico dinamicamente em uma aplicação. Linguagens de script
         (como Lua ou Python) são ferramentas que, dentre outras coisas, fornecem esse tipo de
-        funcionalidade. Podem ter seu código fonte tanto executado em runtime quanto incorporado em
-        outra aplicação para que esta, por sua vez, adquira acesso às suas conveniências. </p>
-    <p> No entanto, tal incorporação de C++ e uma linguagem de script pode trazer vários desafios, como 
-        escolha de qual linguagem usar e aprender/usar a API da linguagem para incorporá-la. Esse trabalho
-        consiste no desenvolvimento de um sistema em C++ fácil de usar que permite ao usuário incorporar
-        facilmente diversas linguagens de script em seu programa.</p>
-    <br/>
+        funcionalidade. Podem ter seu código fonte tanto compilado e processado dinamicamente
+        quanto incorporado na aplicação desejada para que esta, por sua vez, adquira acesso a essas
+        conveniências. No entanto, tal incorporação pode trazer vários desafios, especialmente o de
+        ter que aprender a usar uma API diferente para cada linguagem de script usada. </p>
+    <p> Esta monografia apresentará o um sistema de software que permite ao usuário integrar
+        facilmente diversas linguagens de script a um programa escrito em C++ usando uma API
+        unificada para incorporação e um exportador automatizado de interfaces C++ para essas
+        linguagens de script. Ela explicará todos os principais mecanismos desse sistema, assim como
+        a teoria e a tecnologia por trás deles. </p>
 
     <h2>Objetivos</h2>
     <ul>
-      <li>Desenvolvimento de uma biblioteca C++ que abstrai o uso da API de uma(s) linguagem(s) de script(s)
-        de forma clara, fácil de usar, e facilmente estendida para aceitar outras linguagens de script, sendo
-        que inicialmente terá suporte a Lua e Python. O usuário da biblioteca não necessitará de conhecimento
-        da API da linguagem para usar tal linguagem em seu programa, e o programa não precisa se importar em 
-        qual linguagem ele está usando, dado que seus scripts sejam feitos em alguma linguagem que o sistema
-        reconheçe.</li>
-      <li>Desenvolvimento de uma ferramenta que parseia código C++ (uma API do usuário) a fim de gerar
-        <i>wrappers</i> dessa API para cada linguagem de script que o sistema reconheçe. Para que ela possa 
-        ser usada pelos scripts que a biblioteca executa.</li>
+      <li>Desenvolvimento de uma biblioteca C++ que abstrai o uso da API de uma(s) linguagem(s) de
+          script(s) de forma clara, prática de usar, e facilmente estendível para aceitar outras
+          linguagens de script, sendo que inicialmente terá suporte a Lua e Python. O usuário da
+          biblioteca não necessitará de conhecimento específico da API das linguagens para
+          incorporá-las em seu programa, assim como não precisará se importar com qual linguagem de
+          fato está sendo usada, pois o sistema será capaz de reconhecer as linguagens às quais ele
+          fornece suporte. </li>
+      <li>Desenvolvimento de uma ferramenta que interpreta parte do código C++ do usuário a fim
+          de gerar <i>wrappers</i> das classes e funções desse código para cada linguagem de script
+          que o sistema estiver configurado para reconhecer. Assim, o usuário poderá usufruir das
+          funcionalidades que desenvolveu em C++ na liguagem de script de sua preferência. </li>
+      <li>Desenvolvimento de qualquer outra ferramenta que seja necessária para o devido
+          funcionamento conjunto dos dois resultados acima de maneira a simplificar o máximo
+          possível o uso do sistema como um todo.
     </ul>
-    <br/>
 
     <h2>Atividades Já Realizadas</h2>
     <ul>
-      <li>A biblioteca já existe, porém ainda depende de uma ferramenta externa (SWIG) para geração dos <i>wrappers</i>
-        que introduz vários problemas na incorporação das linguagens;</li>
-      <li>Versão preliminar de um parser C++ para geração dos <i>wrappers</i> (para substituir o SWIG);</li>
+      <li>A biblioteca do primeiro objetivo já foi desenvolvida em anos anteriores pelos autores
+          deste trabalho, porém ainda depende de uma ferramenta externa (SWIG) para geração dos
+          <i>wrappers</i>, o que introduz vários problemas na incorporação das linguagens.</li>
+      <li>A ferramenta do segundo objetivo atualmente é o próprio SWIG, mas para corrigir ou
+          contornar os problemas e restrições impostas por este, está em desenvolvimento uma
+          terceira ferramenta. No momento ela encontra-se em uma versão preliminar e é a maior
+          prioridade da dupla. Possivelmente substituirá o SWIG. <i></li>
     </ul>
-    <br/>
 
     <h2>Cronograma de Atividades</h2>
-  <ul>
-    <li>Janeiro</li>
-    <ul><li>Férias e muito BORDERLANDS.</li></ul>
+    <ul>
+    <li>2011-2012</li>
+    <ul>
+      <li>Desenvolvimento do sistema do jeito que ele é atualmente.</li>
+    </ul>
+    <li>Janeiro/2013</li>
+    <ul>
+      <li>Pesquisa de possíveis soluções para os problemas apresentados pelo uso do SWIG. Procura
+          de um orientador para o trabalho de formatura.</li>
+    </ul>
     <li>Fevereiro</li>
     <ul><li>o que nós fizemos?</li></ul>
     <li>Março</li>
