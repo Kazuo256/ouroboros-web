@@ -1,167 +1,91 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W5C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Projeto Ouroboros</title>
+<style>
+body {
+  margin: auto;
+  margin-top: 80px;
+  width: 800px;
+}
+h1, h2 {
+  text-align: center;
+  font-family: "Arial";
+  height: 2em;
+}
+p {
+  text-align: justify;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 18px;
+  font-family: "Georgia";
+}
+#menubar {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: "Arial";
+  display: block;
+}
+#menubar > li {
+  float: left;
+  margin: 0px;
+  background-color: #E0E0F0;
+}
+#menubar > li:hover  {
+  background-color: #D0D0E0;
+}
+#projects > li > div {
+  width: 100%;
+}
+div.button > a {
+  width: 378px;
+  text-align: center;
+  text-decoration: none;
+  color: #505098;
+  display: block;
+  padding: 0.2em 0.6em;
+  border: 1px solid #AAA;
+}
+.mono {
+  font-family: monospace;
+}
+</style>
 </head>
 
 <body>
-  <div id="container">
-    <div id="header">
-      <h1>Proposta de Trabalho de Formatura - Projeto Ouroboros</h1>
-    </div>   
+  <h2>
+    MAC499 - Trabalho de Formatura Supervisionado
+  </h2>
+  <h1>
+    Projeto Ouroboros
+  </h1>
+  <div style="height: 28px;">
+    <ul id="menubar">
+      <li>
+        <div class="button">
+          <a href="proposta/index.html">Proposta</a>
+        </div>
+      </li>
+      <li>
+        <div class="button">
+          <a href="https://github.com/Rewasvat/ouroboros">Repositório</a>
+        </div>
+      </li>
+    </ul>
   </div>
-    
-  <div id="content">
-    <!--h1>Proposta</h1-->
-    <br/>
-
-    <h2>Nome dos Alunos</h2>
-    <p> Fernando Omar Aluani</p>
-    <p> Wilson Kazuo Mizutani</p>
-    <br/>
-
-    <h2>Nome do Supervisor</h2>
-    <p><a href="http://www.ime.usp.br/~gubi/">Prof. Doutor Marco Dimas Gubitoso</a></p>
-    <br/>
-
-    <h2>Tema da Monografia</h2>
-    <p>Sistema de software que integra C++ com linguagens de <i>script</i>.</p>
-
-    <h2>Resumo</h2>
-    <p> É comum, principalmente no desenvolvimento de jogos eletrônicos, a necessidade de um método
-        prático de se inserir conteúdo lógico dinamicamente em uma aplicação. Linguagens de <i>script</i>
-        (como <a href="http://www.lua.org/portugues.html">Lua</a> ou <a href="http://www.python.org/">Python</a>)
-        são ferramentas que, dentre outras coisas, fornecem esse tipo de
-        funcionalidade. Podem ter seu código fonte tanto compilado e processado dinamicamente
-        quanto incorporado na aplicação desejada para que esta, por sua vez, adquira acesso a essas
-        conveniências. No entanto, tal incorporação pode trazer vários desafios, especialmente o de
-        ter que aprender a usar uma API (<i>Application Programming Interface</i>) diferente para cada
-        linguagem de <i>script</i> usada. </p>
-    <p> Esta monografia apresentará um sistema de <i>software</i> que permite ao usuário integrar
-        facilmente diversas linguagens de <i>script</i> a um programa escrito em C++ usando uma API
-        unificada para incorporação e um exportador automatizado de interfaces C++ para essas
-        linguagens de <i>script</i>. Ela explicará todos os principais mecanismos desse sistema, assim como
-        a teoria e a tecnologia por trás deles. </p>
-
-    <h2>Objetivos</h2>
-    <ul>
-      <li>Desenvolvimento de uma biblioteca C++ que abstrai o uso da API de uma(s) linguagem(s) de
-          <i>script</i>(s) de forma clara, prática de usar, e facilmente estendível para aceitar outras
-          linguagens de <i>script</i>, sendo que inicialmente terá suporte a <a href="http://www.lua.org/portugues.html">Lua</a>
-          e <a href="http://www.python.org/">Python</a>. O usuário da
-          biblioteca não necessitará de conhecimento específico da API das linguagens para
-          incorporá-las em seu programa, assim como não precisará se importar com qual linguagem de
-          fato está sendo usada, pois o sistema será capaz de reconhecer as linguagens às quais ele
-          fornece suporte. </li>
-      <li>Desenvolvimento de uma ferramenta que interpreta parte do código C++ do usuário a fim
-          de gerar <i>wrappers</i> (código fonte, nesse caso em C++, que serve de intermediário para um
-          ambiente externo, como as linguagens de <i>script</i>) das classes e funções desse código
-          para cada linguagem de <i>script</i>
-          que o sistema estiver configurado para reconhecer. Assim, o usuário poderá usufruir das
-          funcionalidades que desenvolveu em C++ na liguagem de <i>script</i> de sua preferência. </li>
-      <li>Desenvolvimento de qualquer outra ferramenta que seja necessária para o devido
-          funcionamento conjunto dos dois resultados acima de maneira a simplificar o máximo
-          possível o uso do sistema como um todo.
-    </ul>
-
-    <h2>Atividades Já Realizadas</h2>
-    <ul>
-      <li>A biblioteca do primeiro objetivo já foi desenvolvida em anos anteriores pelos autores
-          deste trabalho, porém ainda depende de uma ferramenta externa (<a href="http://www.swig.org/">SWIG (<i>Simplified Wrapper and Interface Generator</i>)</a>) para geração dos
-          <i>wrappers</i>, o que introduz vários problemas na incorporação das linguagens.</li>
-      <li>A ferramenta do segundo objetivo atualmente é o próprio <a href="http://www.swig.org/">SWIG</a>, mas para corrigir ou
-          contornar os problemas e restrições impostas por este, está em desenvolvimento uma
-          terceira ferramenta. No momento ela encontra-se em uma versão preliminar e é a maior
-          prioridade da dupla. Pretende-se que esta ferramenta forneça as mesmas funcionalidades
-          que o <a href="http://www.swig.org/">SWIG</a>, efetivamente servindo como uma alternativa ao <a href="http://www.swig.org/">SWIG</a>.</li>
-    </ul>
-
-    <h2>Cronograma de Atividades</h2>
-    <ul>
-    <li>2011-2012</li>
-    <ul>
-      <li>Desenvolvimento do sistema usando <a href="http://www.swig.org/">SWIG</a>.</li>
-    </ul>
-    <li>Janeiro/2013</li>
-    <ul>
-      <li>Pesquisa de possíveis soluções para os problemas apresentados pelo uso do <a href="http://www.swig.org/">SWIG</a>. Procura
-          de um orientador para o trabalho de formatura.</li>
-    </ul>
-    <li>Fevereiro</li>
-    <ul><li>Início do desenvolvimento da ferramenta que lidaria com os problemas do <a href="http://www.swig.org/">SWIG</a>.</li></ul>
-    <li>Março</li>
-    <ul><li>Continuação do desenvolvimento da dita ferramenta. Revisão de prioridades: Tentar
-            fazer um gerador de <i>Proxies</i> antes de tentar substituir o <a href="http://www.swig.org/">SWIG</a> inteiro.</li></ul>
-    <li>Abril</li>
-    <ul><li>Mais desenvolvimento. Avaliação de monografias de anos anteriores.</li></ul>
-    <li>Maio</li>
-    <ul><li>Mais desenvolvimento. Elaboração desta proposta para o trabalho de formatura.</li></ul>
-    <li>Junho</li>
-    <ul><li>Versão prototipal do gerador de <i>Proxies</i>. Início da elaboração da monografia.</li></ul>
-    <li>Julho</li>
-    <ul><li>Terminar o gerador de <i>Proxies</i>. Avaliar tempo disponível para terminar o resto do
-            projeto. Prosseguir com a monografia. </li></ul>
-    <li>Agosto</li>
-    <ul><li>Terminar as partes essenciais da monografia e do projeto. </li></ul>
-    <li>Setembro</li>
-    <ul><li>Entregar a prévia da monografia.</li></ul>        
-    <li>Outubro</li>
-    <ul><li>Fazer todos os acabamentos finais no sistema de software e na monografia.</li></ul>
-    <li>Novembro</li>
-    <ul><li>Confecção do pôster e apresentação do trabalho.</li></ul>
-    <li>Dezembro</li>
-    <ul><li>Entregar a monografia.</li></ul>
-  </ul>
-  <br/>
-      
-    <h2>Estrutura Esperada da Monografia</h2>
-  <ol>
-    <li>Introdução</li>
-    <ul>
-          <li>Motivação.</li>
-          <li>Objetivos.</li>
-          <li>Problemas.</li>
-        </ul>
-    <li>Estrutura do Projeto</li>
-    <ul>
-      <li>Visão geral.</li>
-      <li>Biblioteca de abstração de APIs de linguagens de <i>script</i>.</li>
-      <li>Gerador de <i>wrappers</i> e interfaces.</li>
-      <li>Integrando e entregando tudo para o usuário.</li>
-    </ul>
-    <li>Atividades realizadas</li>
-    <ul>
-      <li>Origem do projeto: sistema de <i>scripts</i> da UGDK.</li>
-      <li>Uma interface comum para <a href="http://www.lua.org/portugues.html">Lua</a> e <a href="http://www.python.org/">Python</a>.</li>
-      <li>Integração com <a href="http://www.swig.org/">SWIG</a>.</li>
-      <li>Problemas do <a href="http://www.swig.org/">SWIG</a>.</li>
-      <li>Nosso próprio gerador de <i>wrappers</i>.</li>
-      <li>Módulos de CMake.</li>
-    </ul>
-    <li>Resultados e produtos obtidos</li>
-    <ul>
-          <li>libouroboros</li>
-          <li>opwig</li>
-        </ul>
-    <li>Conclusão</li>
-    <li>Bibliografia</li>
-    <li>Parte Subjetiva - Fernando</li>
-    <ul>
-          <li>Desafios e frustrações.</li>
-          <li>Disciplinas do curso.</li>
-          <li>Continuação do estudo.</li>
-        </ul>
-      <li>Parte Subjetiva - Wilson</li>
-    <ul>
-          <li>Desafios e frustrações.</li>
-          <li>Disciplinas do curso.</li>
-          <li>Continuação do estudo.</li>
-        </ul>
-    </ol>
-
-
+  <div style="height: 32px">
   </div>
+  <p>
+    Nesse projeto elaboramos e desenvolvemos um sistema que integra uma linguagem de programação
+    compilada (<span class="mono">C++</span>) com várias linguagens de <i>scripts</i>
+    (<span class="mono">Lua</span> e <span class="mono">Python</span>). A ideia é fazer uma
+    ferramenta que facilite a vida de todo programador que queira ou exportar rotinas em
+    <span class="mono">C++</span> para essas linguagens de <i>script</i>, ou incorporar
+    <i>scripts</i> na aplicação <span class="mono">C++</span> dele. Batizamos ele de <b>Projeto
+    Ouroboros</b>.
+  </p>
 </body>
-</html>
-
