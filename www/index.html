@@ -37,33 +37,32 @@ table {
   font-size: 14px;
   text-align: center;
 }
-#menubar {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+ul#menubar {
   list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Arial";
-  display: block;
+  overflow: hidden;
+  border: 1px solid #AAA;
+  border-radius: 10px;
 }
 #menubar > li {
   float: left;
-  margin: 0px;
-  background-color: #E0E0F0;
+  width: 20%;
 }
-#menubar > li:hover  {
-  background-color: #D0D0E0;
-}
-#projects > li > div {
+a.button:link, a.button:visited {
+  display: block;
   width: 100%;
-}
-div.button > a {
-  width: 240px;
+  font-weight: bold;
+  color: #505098;
+  background-color: #E0E0F0;
   text-align: center;
   text-decoration: none;
-  color: #505098;
-  display: block;
-  padding: 0.2em 0.6em;
-  border: 1px solid #AAA;
+  padding: 0.2em 0.0em;
+}
+a.button:hover, a.button:active  {
+  background-color: #D0D0E0;
 }
 .mono {
   font-family: monospace;
@@ -81,19 +80,19 @@ div.button > a {
   <div style="height: 28px;">
     <ul id="menubar">
       <li>
-        <div class="button">
-          <a href="index.html">Home</a>
-        </div>
+        <a class="button" href="index.html">Home</a>
       </li>
       <li>
-        <div class="button">
-          <a href="proposta/index.html">Proposta</a>
-        </div>
+        <a class="button" href="proposta/index.html">Proposta</a>
       </li>
       <li>
-        <div class="button">
-          <a href="https://github.com/Rewasvat/ouroboros">Repositório</a>
-        </div>
+        <a class="button" href="http://projeto-ouroboros.blogspot.com.br/">Blog</a>
+      </li>
+      <li>
+        <a class="button" href="monografia/monografia.pdf">Monografia</a>
+      </li>
+      <li>
+        <a class="button" href="https://github.com/Rewasvat/ouroboros">Repositório</a>
       </li>
     </ul>
   </div>
