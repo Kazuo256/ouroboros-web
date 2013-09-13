@@ -21,6 +21,7 @@ Orientado:
   |-- avaliacoes/
   |------ index.html
   |------ 6797230-wilson-avaliacoes.tgz
+  |------ avaliacoes.pdf
   |-- monografia/
   |------ monografia.pdf
   |-- poster/
