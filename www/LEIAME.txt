@@ -1,0 +1,54 @@
+
+    MAC0499/2013 - Trabalho de Formatura Supervisionado
+
+Alunos:
+  Fernando Omar Aluani
+  Wilson Kazuo Mizutani
+
+Orientado:
+  Prof. Dr. Marco Dimas Gubitoso
+
+=== Arquivos ===
+
+  entrega-preliminar/
+  |-- LEIAME.txt
+  |-- index.html
+  |-- home.html
+  |-- andamento.html
+  |-- style.css
+  |-- codigo.zip
+  |-- apresentacao/
+  |------ index.html
+  |-- avaliacoes/
+  |------ index.html
+  |------ 6797230-wilson-avaliacoes.tgz
+  |-- monografia/
+  |------ monografia.pdf
+  |-- poster/
+  |------ index.html
+  |-- proposta/
+  |------ index.html
+
+  Expicações:
+  - LEIAME.txt:
+      Este arquivo.
+  - *.html, *.css:
+      Arquivos da página do projeto.
+  - codigo.zip:
+      Código fonte da ferramenta que desenvolvemos no trabalho até o momento.
+      (também temos um repositório no GitHun: github.com/Rewasvat/ouroboros)
+  - avaliacoes/6797230-wilson-avaliacoes.tgz,
+    ???:
+      As avaliações de monografias de anos anteriores.
+  - monografia/monografia.pdf:
+      Versão preliminar da monografia do nosso trabalho.
+
+=== Andamento do Projeto ===
+
+  Nosso trabalho envolve, além da monografia em si, o desenvolvimento de um
+  sistema de software. Como ele é o foco, descrevemos não só a idealização
+  dele como também o que de fato fizemos até o momento na própria monografia
+  (mais especificamente no capítulo "Estado Atual do Projeto"). Logo,
+  preferimos não repetir o texto sobre o andamento do projeto aqui, deixando
+  apenas o que está já na monografia.
+
