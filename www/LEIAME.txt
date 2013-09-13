@@ -35,7 +35,7 @@ Orientado:
   - *.html, *.css:
       Arquivos da página do projeto.
   - avaliacoes/6797230-wilson-avaliacoes.tgz,
-    ???:
+    avaliacoes/avaliacoes.pdf:
       As avaliações de monografias de anos anteriores.
   - monografia/monografia.pdf:
       Versão preliminar da monografia do nosso trabalho.
