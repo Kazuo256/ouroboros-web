@@ -16,7 +16,6 @@ Orientado:
   |-- home.html
   |-- andamento.html
   |-- style.css
-  |-- codigo.zip
   |-- apresentacao/
   |------ index.html
   |-- avaliacoes/
@@ -34,16 +33,18 @@ Orientado:
       Este arquivo.
   - *.html, *.css:
       Arquivos da página do projeto.
-  - codigo.zip:
-      Código fonte da ferramenta que desenvolvemos no trabalho até o momento.
-      (também temos um repositório no GitHun: github.com/Rewasvat/ouroboros)
   - avaliacoes/6797230-wilson-avaliacoes.tgz,
     ???:
       As avaliações de monografias de anos anteriores.
   - monografia/monografia.pdf:
       Versão preliminar da monografia do nosso trabalho.
 
-=== Andamento do Projeto ===
+=== Código Fonte do Trabalho ===
+
+  Disponível na página principal do trabalho, no link "Código". Ele vai baixar
+  diretamente do GitHub.
+
+=== Andamento do Trabalho ===
 
   Nosso trabalho envolve, além da monografia em si, o desenvolvimento de um
   sistema de software. Como ele é o foco, descrevemos não só a idealização
