@@ -50,7 +50,14 @@ Orientado:
   Nosso trabalho envolve, além da monografia em si, o desenvolvimento de um
   sistema de software. Como ele é o foco, descrevemos não só a idealização
   dele como também o que de fato fizemos até o momento na própria monografia
-  (mais especificamente no capítulo "Estado Atual do Projeto"). Logo,
-  preferimos não repetir o texto sobre o andamento do projeto aqui, deixando
-  apenas o que está já na monografia.
+  (mais especificamente nos capítulos "Atividades Realizadas" e "Estado Atual
+  do Projeto"). Logo, preferimos não repetir o texto sobre o andamento do
+  projeto aqui.
+
+  Mas queremos deixar claro que o que já está na monografia
+  representa o quanto já fizemos do trabalho. Isso é, tudo que falamos na
+  monografia como se já estivesse implementado, é porque de fato já está
+  implementado. O que não significa que não faremos mais nada até a versão
+  final, e, caso façamos, o texto será atualizado de acordo.
+
 
