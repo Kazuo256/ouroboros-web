@@ -24,7 +24,7 @@ Orientado:
   |-- codigo/
   |------ index.html
   |------ ouroboros.zip
-  |------ milestone.zip
+  |------ milestones.zip
   |-- monografia/
   |------ monografia.pdf
   |-- poster/
