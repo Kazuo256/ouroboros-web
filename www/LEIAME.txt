@@ -1,9 +1,9 @@
 
     MAC0499/2013 - Trabalho de Formatura Supervisionado
 
-Alunos:
-  Fernando Omar Aluani
-  Wilson Kazuo Mizutani
+Alunos:                   Nº USP:
+  Fernando Omar Aluani      6797226
+  Wilson Kazuo Mizutani     6797230
 
 Orientado:
   Prof. Dr. Marco Dimas Gubitoso
