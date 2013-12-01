@@ -14,18 +14,21 @@ Orientado:
   |-- LEIAME.txt
   |-- index.html
   |-- home.html
-  |-- andamento.html
   |-- style.css
   |-- apresentacao/
-  |------ index.html
+  |------ slides.pdf
   |-- avaliacoes/
   |------ index.html
   |------ 6797230-wilson-avaliacoes.tgz
   |------ avaliacoes.pdf
+  |-- codigo/
+  |------ index.html
+  |------ ouroboros.zip
+  |------ milestone.zip
   |-- monografia/
   |------ monografia.pdf
   |-- poster/
-  |------ index.html
+  |------ poster.pdf
   |-- proposta/
   |------ index.html
 
@@ -37,27 +40,10 @@ Orientado:
   - avaliacoes/6797230-wilson-avaliacoes.tgz,
     avaliacoes/avaliacoes.pdf:
       As avaliações de monografias de anos anteriores.
+  - codigo/*.zip:
+      Pacotes com código fonte do nosos trabalho. Acessar o link "Código" na
+      página para mais informações.
   - monografia/monografia.pdf:
-      Versão preliminar da monografia do nosso trabalho.
-
-=== Código Fonte do Trabalho ===
-
-  Disponível na página principal do trabalho, no link "Código". Ele vai baixar
-  diretamente do GitHub.
-
-=== Andamento do Trabalho ===
-
-  Nosso trabalho envolve, além da monografia em si, o desenvolvimento de um
-  sistema de software. Como ele é o foco, descrevemos não só a idealização
-  dele como também o que de fato fizemos até o momento na própria monografia
-  (mais especificamente nos capítulos "Atividades Realizadas" e "Estado Atual
-  do Projeto"). Logo, preferimos não repetir o texto sobre o andamento do
-  projeto aqui.
-
-  Mas queremos deixar claro que o que já está na monografia
-  representa o quanto já fizemos do trabalho. Isso é, tudo que falamos na
-  monografia como se já estivesse implementado, é porque de fato já está
-  implementado. O que não significa que não faremos mais nada até a versão
-  final, e, caso façamos, o texto será atualizado de acordo.
+      Monografia do nosso trabalho.
 
 
